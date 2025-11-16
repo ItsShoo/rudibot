@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- Sambutan awal -->
+<category>
+  <pattern>HALO</pattern>
+  <template>
+    <random>
+      <li>Halo! Selamat datang di Bot Resep Makanan. Saya bisa membantu Anda menemukan resep masakan Indonesia. Coba tanya "resep nasi goreng" atau "cara masak rendang"!</li>
+      <li>Hai! Saya adalah asisten resep makanan Anda. Tanyakan resep apa saja yang ingin Anda masak hari ini!</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>HAI</pattern>
+  <template><srai>HALO</srai></template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template><srai>HALO</srai></template>
+</category>
+
+<!-- Bagian 1: Resep Nasi Goreng -->
+<category>
+  <pattern>RESEP NASI GORENG</pattern>
+  <template>
+    Resep Nasi Goreng Spesial:
+    
+    Bahan-bahan:
+    - 2 piring nasi putih
+    - 2 butir telur
+    - 3 siung bawang putih
+    - 5 siung bawang merah
+    - 2 sdm kecap manis
+    - 1 sdt garam
+    - Merica secukupnya
+    - Minyak goreng
+    
+    Cara membuat:
+    1. Haluskan bawang putih dan bawang merah
+    2. Panaskan minyak, tumis bumbu halus hingga harum
+    3. Masukkan telur, orak-arik
+    4. Tambahkan nasi putih, aduk rata
+    5. Beri kecap manis, garam, dan merica
+    6. Masak hingga bumbu meresap
+    7. Sajikan dengan kerupuk dan acar
+    
+    Selamat memasak! 🍳
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK NASI GORENG</pattern>
+  <template><srai>RESEP NASI GORENG</srai></template>
+</category>
+
+<category>
+  <pattern>CARA BUAT NASI GORENG</pattern>
+  <template><srai>RESEP NASI GORENG</srai></template>
+</category>
+
+<!-- Bagian 2: Resep Rendang -->
+<category>
+  <pattern>RESEP RENDANG</pattern>
+  <template>
+    Resep Rendang Daging Sapi:
+    
+    Bahan-bahan:
+    - 500 gram daging sapi
+    - 1 liter santan kelapa
+    - 8 siung bawang merah
+    - 4 siung bawang putih
+    - 5 cabai merah
+    - 3 cm jahe
+    - 2 batang serai
+    - 3 lembar daun jeruk
+    - Garam dan gula secukupnya
+    
+    Cara membuat:
+    1. Haluskan bumbu: bawang merah, bawang putih, cabai, jahe
+    2. Tumis bumbu halus hingga harum
+    3. Masukkan daging, aduk hingga berubah warna
+    4. Tuang santan, tambahkan serai dan daun jeruk
+    5. Masak dengan api kecil sambil terus diaduk
+    6. Masak hingga santan menyusut dan daging empuk (2-3 jam)
+    7. Rendang siap disajikan dengan nasi hangat
+    
+    Tips: Rendang akan semakin enak jika dibiarkan sehari! 🍛
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK RENDANG</pattern>
+  <template><srai>RESEP RENDANG</srai></template>
+</category>
+
+<category>
+  <pattern>CARA BUAT RENDANG</pattern>
+  <template><srai>RESEP RENDANG</srai></template>
+</category>
+
+<!-- Bagian 3: Resep Soto Ayam -->
+<category>
+  <pattern>RESEP SOTO AYAM</pattern>
+  <template>
+    Resep Soto Ayam Kuning:
+    
+    Bahan-bahan:
+    - 500 gram ayam
+    - 2 liter air
+    - 5 siung bawang putih
+    - 1 sdt kunyit bubuk
+    - 2 batang serai
+    - 3 lembar daun salam
+    - 2 cm jahe
+    - Garam dan merica
+    - Pelengkap: bihun, telur rebus, seledri, bawang goreng
+    
+    Cara membuat:
+    1. Rebus ayam dengan air, serai, daun salam hingga empuk
+    2. Angkat ayam, suwir-suwir
+    3. Haluskan bawang putih, jahe, kunyit
+    4. Tumis bumbu halus hingga harum
+    5. Masukkan bumbu ke dalam kaldu ayam
+    6. Masak hingga mendidih, beri garam dan merica
+    7. Sajikan dengan bihun, ayam suwir, telur, dan taburan seledri
+    
+    Soto hangat siap dinikmati! 🍲
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK SOTO</pattern>
+  <template><srai>RESEP SOTO AYAM</srai></template>
+</category>
+
+<!-- Bagian 4: Resep Gado-gado -->
+<category>
+  <pattern>RESEP GADO GADO</pattern>
+  <template>
+    Resep Gado-gado:
+    
+    Bahan sayuran:
+    - Kol, kangkung, tauge, wortel (direbus)
+    - Kentang rebus
+    - Tahu dan tempe goreng
+    - Telur rebus
+    - Kerupuk
+    
+    Bumbu kacang:
+    - 200 gram kacang tanah goreng
+    - 3 siung bawang putih
+    - 2 cabai merah
+    - 2 sdm gula merah
+    - Garam secukupnya
+    - Air asam jawa
+    
+    Cara membuat:
+    1. Haluskan kacang goreng, bawang putih, cabai
+    2. Tambahkan gula merah, garam, air asam jawa
+    3. Beri air hingga kekentalan pas
+    4. Masak bumbu kacang hingga mendidih
+    5. Tata sayuran di piring
+    6. Siram dengan bumbu kacang
+    7. Sajikan dengan kerupuk
+    
+    Gado-gado segar siap disantap! 🥗
+  </template>
+</category>
+
+<category>
+  <pattern>CARA BUAT GADO GADO</pattern>
+  <template><srai>RESEP GADO GADO</srai></template>
+</category>
+
+<!-- Bagian 5: Resep Ayam Goreng -->
+<category>
+  <pattern>RESEP AYAM GORENG</pattern>
+  <template>
+    Resep Ayam Goreng Kremes:
+    
+    Bahan-bahan:
+    - 1 kg ayam potong
+    - 5 siung bawang putih
+    - 3 cm kunyit
+    - 2 cm jahe
+    - 1 sdt ketumbar
+    - Garam dan gula secukupnya
+    - Tepung beras untuk kremesan
+    - Minyak goreng
+    
+    Cara membuat:
+    1. Haluskan bawang putih, kunyit, jahe, ketumbar
+    2. Balur ayam dengan bumbu halus, diamkan 30 menit
+    3. Rebus ayam hingga setengah matang dengan sisa bumbu
+    4. Tiriskan ayam, goreng hingga kuning kecoklatan
+    5. Untuk kremes: ambil sisa kaldu bumbu, campur tepung beras
+    6. Siram adonan tepung ke minyak panas dengan saringan
+    7. Sajikan ayam dengan kremesan
+    
+    Ayam goreng renyah siap disantap! 🍗
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK AYAM GORENG</pattern>
+  <template><srai>RESEP AYAM GORENG</srai></template>
+</category>
+
+<!-- Bagian 6: Resep Bakso -->
+<category>
+  <pattern>RESEP BAKSO</pattern>
+  <template>
+    Resep Bakso Sapi:
+    
+    Bahan-bahan:
+    - 500 gram daging sapi giling
+    - 100 gram tepung tapioka
+    - 3 siung bawang putih
+    - 1 butir telur
+    - Garam, merica, kaldu bubuk
+    - Air es secukupnya
+    
+    Kuah:
+    - 2 liter kaldu sapi
+    - Daun bawang, seledri
+    - Bawang goreng
+    
+    Cara membuat:
+    1. Haluskan daging dengan bawang putih
+    2. Campur dengan tepung, telur, garam, merica
+    3. Tambahkan air es sedikit demi sedikit sambil diuleni
+    4. Bentuk bulat-bulat, rebus dalam air mendidih
+    5. Angkat jika bakso mengapung
+    6. Sajikan dengan kuah kaldu, mie, dan sayuran
+    
+    Bakso kenyal siap dinikmati! 🍜
+  </template>
+</category>
+
+<category>
+  <pattern>CARA BUAT BAKSO</pattern>
+  <template><srai>RESEP BAKSO</srai></template>
+</category>
+
+<!-- Bagian 7: Resep Sate Ayam -->
+<category>
+  <pattern>RESEP SATE AYAM</pattern>
+  <template>
+    Resep Sate Ayam Bumbu Kacang:
+    
+    Bahan sate:
+    - 500 gram daging ayam, potong dadu
+    - 3 sdm kecap manis
+    - 1 sdm minyak
+    - Tusuk sate
+    
+    Bumbu kacang:
+    - 200 gram kacang tanah goreng
+    - 3 siung bawang putih
+    - 3 cabai rawit
+    - 2 sdm kecap manis
+    - Gula merah, garam
+    - Air secukupnya
+    
+    Cara membuat:
+    1. Marinasi ayam dengan kecap dan minyak 1 jam
+    2. Tusuk ayam dengan tusuk sate
+    3. Bakar sambil dioles bumbu hingga matang
+    4. Haluskan bahan bumbu kacang, masak hingga mendidih
+    5. Sajikan sate dengan bumbu kacang
+    
+    Sate ayam panggang siap! 🍢
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK SATE</pattern>
+  <template><srai>RESEP SATE AYAM</srai></template>
+</category>
+
+<!-- Bagian 8: Resep Nasi Uduk -->
+<category>
+  <pattern>RESEP NASI UDUK</pattern>
+  <template>
+    Resep Nasi Uduk Jakarta:
+    
+    Bahan-bahan:
+    - 500 gram beras
+    - 400 ml santan
+    - 2 lembar daun salam
+    - 2 batang serai, memarkan
+    - 3 cm lengkuas, memarkan
+    - Garam secukupnya
+    
+    Pelengkap:
+    - Telur dadar
+    - Ayam goreng
+    - Tempe orek
+    - Kerupuk
+    - Sambal
+    
+    Cara membuat:
+    1. Cuci beras hingga bersih
+    2. Campur beras dengan santan, daun salam, serai, lengkuas
+    3. Tambahkan garam, aduk rata
+    4. Masak dengan rice cooker atau kukus hingga matang
+    5. Sajikan dengan pelengkap
+    
+    Nasi uduk harum siap disajikan! 🍚
+  </template>
+</category>
+
+<category>
+  <pattern>CARA BUAT NASI UDUK</pattern>
+  <template><srai>RESEP NASI UDUK</srai></template>
+</category>
+
+<!-- Bagian 9: Resep Rawon -->
+<category>
+  <pattern>RESEP RAWON</pattern>
+  <template>
+    Resep Rawon Daging Sapi:
+    
+    Bahan-bahan:
+    - 500 gram daging sapi
+    - 5 buah kluwek, sangrai
+    - 6 siung bawang merah
+    - 4 siung bawang putih
+    - 5 cabai merah
+    - 3 cm jahe
+    - 2 batang serai
+    - Daun jeruk, daun salam
+    - Garam dan gula
+    
+    Cara membuat:
+    1. Rebus daging hingga empuk, sisihkan kaldu
+    2. Haluskan kluwek, bawang merah, bawang putih, cabai, jahe
+    3. Tumis bumbu halus, serai, daun jeruk, daun salam
+    4. Masukkan bumbu ke kaldu daging
+    5. Masak hingga bumbu meresap
+    6. Sajikan dengan nasi, tauge, telur asin
+    
+    Rawon hitam legit siap dihidangkan! 🍛
+  </template>
+</category>
+
+<category>
+  <pattern>CARA MASAK RAWON</pattern>
+  <template><srai>RESEP RAWON</srai></template>
+</category>
+
+<!-- Bagian 10: Resep Pecel Lele -->
+<category>
+  <pattern>RESEP PECEL LELE</pattern>
+  <template>
+    Resep Pecel Lele Goreng:
+    
+    Bahan-bahan:
+    - 4 ekor ikan lele
+    - 5 siung bawang putih
+    - 3 cm kunyit
+    - 1 sdt ketumbar
+    - Garam secukupnya
+    - Minyak goreng
+    
+    Sambal:
+    - 10 cabai rawit
+    - 3 cabai merah
+    - 5 bawang merah
+    - 2 tomat
+    - Terasi, garam, gula
+    
+    Cara membuat:
+    1. Bersihkan lele, beri perasan jeruk nipis
+    2. Haluskan bumbu: bawang putih, kunyit, ketumbar, garam
+    3. Balur lele dengan bumbu, diamkan 30 menit
+    4. Goreng lele hingga kering dan garing
+    5. Buat sambal: goreng semua bahan sambal, ulek kasar
+    6. Sajikan lele dengan sambal, lalapan, dan nasi hangat
+    
+    Pecel lele pedas siap disantap! 🐟
+  </template>
+</category>
+
+<category>
+  <pattern>CARA BUAT PECEL LELE</pattern>
+  <template><srai>RESEP PECEL LELE</srai></template>
+</category>
+
+<!-- Kategori umum tentang resep -->
+<category>
+  <pattern>APA SAJA RESEP *</pattern>
+  <template>
+    Saya punya 10 resep masakan Indonesia yang lezat! Berikut daftarnya:
+    
+    1. Nasi Goreng - makanan favorit Indonesia
+    2. Rendang - masakan khas Padang yang terkenal
+    3. Soto Ayam - sup ayam kuning yang hangat
+    4. Gado-gado - salad sayur dengan bumbu kacang
+    5. Ayam Goreng - ayam kremes yang renyah
+    6. Bakso - bola daging sapi kenyal
+    7. Sate Ayam - sate dengan bumbu kacang
+    8. Nasi Uduk - nasi gurih khas Jakarta
+    9. Rawon - sup daging hitam khas Jawa Timur
+    10. Pecel Lele - ikan lele goreng dengan sambal
+    
+    Silakan tanya resep spesifik yang Anda inginkan, misalnya "resep bakso" atau "cara masak rawon"
+  </template>
+</category>
+
+<category>
+  <pattern>RESEP APA SAJA</pattern>
+  <template><srai>APA SAJA RESEP</srai></template>
+</category>
+
+<!-- Pertanyaan tentang bot -->
+<category>
+  <pattern>SIAPA KAMU</pattern>
+  <template>
+    Saya adalah Bot Resep Makanan berbasis AI yang dirancang untuk membantu Anda menemukan dan mempelajari resep masakan Indonesia. Saya bisa memberikan resep lengkap dengan bahan dan cara pembuatannya!
+  </template>
+</category>
+
+<category>
+  <pattern>APA YANG BISA KAMU LAKUKAN</pattern>
+  <template>
+    Saya bisa membantu Anda dengan:
+    - Memberikan resep masakan Indonesia
+    - Menjelaskan cara memasak berbagai hidangan
+    - Menyediakan daftar bahan yang dibutuhkan
+    - Memberikan tips memasak
+    
+    Coba tanya: "resep nasi goreng", "cara masak rendang", atau "resep apa saja"
+  </template>
+</category>
+
+<!-- Respon default -->
+<category>
+  <pattern>*</pattern>
+  <template>
+    Maaf, saya tidak mengerti pertanyaan Anda. Saya adalah bot resep makanan. 
+    
+    Cobalah tanya:
+    - "resep nasi goreng"
+    - "cara masak rendang"
+    - "resep soto ayam"
+    - "resep apa saja"
+    
+    Atau katakan "halo" untuk memulai!
+  </template>
+</category>
+
+<!-- Ucapan terima kasih -->
+<category>
+  <pattern>TERIMA KASIH</pattern>
+  <template>
+    <random>
+      <li>Sama-sama! Selamat memasak dan semoga masakannya enak! 😊</li>
+      <li>Terima kasih kembali! Jangan ragu untuk bertanya resep lainnya!</li>
+      <li>Senang bisa membantu! Selamat mencoba resepnya!</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>MAKASIH</pattern>
+  <template><srai>TERIMA KASIH</srai></template>
+</category>
+
+<category>
+  <pattern>THANKS</pattern>
+  <template><srai>TERIMA KASIH</srai></template>
+</category>
+
+<!-- Salam perpisahan -->
+<category>
+  <pattern>SAMPAI JUMPA</pattern>
+  <template>
+    Sampai jumpa! Semoga masakan Anda berhasil dan lezat. Kembali lagi jika butuh resep baru! 👋
+  </template>
+</category>
+
+<category>
+  <pattern>BYE</pattern>
+  <template><srai>SAMPAI JUMPA</srai></template>
+</category>
+
+<category>
+  <pattern>SELAMAT TINGGAL</pattern>
+  <template><srai>SAMPAI JUMPA</srai></template>
+</category>
+
+
+<category>
+    <pattern>halo</pattern>
+    <template>Halo! Selamat datang di Bot Resep Makanan. Saya bisa membantu Anda menemukan resep masakan Indonesia. Coba tanya "resep nasi goreng" atau "cara masak rendang"!</template>
+</category>
+<category>
+    <pattern>Resep Nasi Goreng</pattern>
+    <template>Resep Nasi Goreng Spesial:
+
+
+Bahan-bahan:
+- 2 piring nasi putih
+- 2 butir telur
+- 3 siung bawang putih
+- 5 siung bawang merah
+- 2 sdm kecap manis
+- 1 sdt garam
+- Merica secukupnya
+- Minyak goreng
+
+
+Cara membuat:
+1. Haluskan bawang putih dan bawang merah
+2. Panaskan minyak, tumis bumbu halus hingga harum
+3. Masukkan telur, orak-arik
+4. Tambahkan nasi putih, aduk rata
+5. Beri kecap manis, garam, dan merica
+6. Masak hingga bumbu meresap
+7. Sajikan dengan kerupuk dan acar
+
+
+Selamat memasak! �</template>
+</category>
+</aiml>
